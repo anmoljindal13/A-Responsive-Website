@@ -5,30 +5,27 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/jquery.js" type="text/javascript"></script>
     <script src="JS/jquery-ui.min.js"></script> </script>
-    <script>
-      function selectStep (n) {
-        $('.content-switcher').hide();
-        $('#Content' + n).show();
-        }
-    </script>
   </head>
   <body>
     <script src="JS/script.js"></script>
-      <img class = "Image" src ="https://www.2paulsgoodfood.com/wp-content/uploads/2018/01/logo-design-website-logo-and-website-design-50-most-brilliant-logo-design-ideas-for-printable.gif">
-    <h3 class = "Company_Title"> 
-      <div id ="Company_Name" >The Freelance Web - Developer </div>
-    </h3>
+    <div class="Title">
+      <img class = "Image" src ="Images/icon.png">
+    <div class = "Company_Title"> 
+       <strong>The Freelance Web - Developer</strong> 
+    </div>
+    <div id="MainMenu">
+        <!-- Use any element to open the sidenav -->
+        <img onclick="openNav()" src="Images/menu.png">
+        </div>
+    </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#Home">Home</a>
         <a href="#About">About Us</a>
         <a href="#How">How it works</a>
         <a href="#Contact">Contact Us</a>
-      </div>
-      <div id="MainMenu">
-      <!-- Use any element to open the sidenav -->
-      <button onclick="openNav()">Main Menu</button>
-      </div>
+    </div>
+    <div class="back_a">
       <div class="main-content">
       <div class="container">
         <div class="content-switcher" id="Content1">
@@ -42,25 +39,28 @@
         </div>
         <div class="content-switcher" id="Content4">
           <h1> Fourth Content </h1>
-        </div>
-        <div class="progress-selected-a" onclick="selectStep(1); return false;"> </div>
-        <div class="progress-selected-b" onclick="selectStep(2); return false;"> </div>
-        <div class="progress-selected-c" onclick="selectStep(3); return false;"> </div>
-        <div class="progress-selected-d" onclick="selectStep(4); return false;"> </div>     
+        </div>    
+      </div>
       </div>
     </div>
+    <div class="Content">
       <div id="Home">
-        <h1> HOME </h1>
-      </div>
+        <div class="thome"> <strong>Home</strong> </div>
+        <div class="cont"> <p>Home Content</p></div>
+      </div> 
       <div id="About">
-        <h1> About Us </h1>
-      </div>
+          <div class="thome"> <strong>About Us</strong> </div>
+        <div class="cont"> <p>About Us Content</p></div>
+        </div>
       <div id="How">
-        <h1> How it works </h1>
-      </div>
-      <div id="Contact">
-        <h1> Contact Us </h1>
-      </div>
+          <div class="thome"> <strong>How it works</strong> </div>
+          <div class="cont"><p>How it works Content</p></div>
+        </div>
+      <div id="Contact" >
+          <div class="thome"> <strong>Contact Us</strong> </div>
+          <div class="cont"><p> Contact Us</p></div>
+        </div>
+    </div>
       <div class="footer">
         <p> <strong> Developed and Owned By: </strong> <em> Anmol Jindal </em></p> 
         <p> <strong>Address:</strong> Room No:65, 5th Block Hostel, NITK </p>
