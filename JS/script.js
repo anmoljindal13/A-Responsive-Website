@@ -1,9 +1,8 @@
-/* Open the sidenav */
+
 function openNav () {
   document.getElementById('mySidenav').style.width = '250px'
 }
 
-/* Close/hide the sidenav */
 function closeNav () {
   document.getElementById('mySidenav').style.width = '0'
 }
@@ -11,12 +10,10 @@ function closeNav () {
 var slideIndex = 1
 showSlides(slideIndex)
 
-// Next/previous controls
 function plusSlides (n) {
   showSlides(slideIndex += n)
 }
 
-// Thumbnail image controls
 function currentSlide (n) {
   showSlides(slideIndex = n)
 }
