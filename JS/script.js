@@ -1,3 +1,8 @@
+function greetMe (name) {
+  var today = new Date()
+  alert('Hello ' + name + 'today is ' + today.toDateString())
+}
+greetMe('User, ')
 
 function openNav () {
   document.getElementById('mySidenav').style.width = '250px'
